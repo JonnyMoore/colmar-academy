@@ -55,6 +55,11 @@ p {
   margin-bottom: 0.5rem;
 }
 
+.readmore {
+  color: #0000EE;
+  text-decoration: none;
+}
+
 @media only screen and (max-width: 768px) {
   h1 {
     font-size: 3rem;
@@ -261,8 +266,6 @@ header li {
   display: inline-flex;
   align-items: center;
   width: 100%;
-  border-bottom: 0.5px solid #2A3132;
-  border-left: 0.5px solid #2A3132;
 }
 
 .info-img img {
@@ -284,5 +287,253 @@ header li {
   margin-bottom: 2rem;
 }
 
+.guest {
+  background-color: #d8d8d8;
+ }
+
+
 .sidebar-mobile {
   display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .info-featured {
+    display: none;
+  }
+
+  .info-sidebar {
+    display: none;
+  }
+
+  .sidebar-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-start;
+  }
+
+  .info-img {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info-img img {
+    width: 100%;
+    height: auto;
+    max-width: 320px;
+    padding: 4rem 1rem 1rem 1rem;
+    justify-content: space-around;
+  }
+
+  .info-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem 0 4rem 0;
+}
+
+  .guest {
+  background-color: #d8d8d8;
+  }
+}
+
+/* Courses */
+
+.courses {
+    background-color: #d8d8d8;
+}
+
+.courses h2 {
+  width: 100%;
+  text-align: center;
+}
+
+.courses-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 4.5rem;
+  padding-right: 4.5rem;
+}
+
+.course-img {
+  width: 30%;
+  padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.course-img img {
+  height: auto;
+  width: 100%;
+}
+
+.course-info {
+  display:flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  background-color: white;
+  padding-left: 1.0rem;
+  height: 180px;
+}
+
+.course-mobile {
+  display: none;
+}
+
+#course {
+  text-align: left;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#cap {
+  text-transform: uppercase;
+  text-align: left;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Media Queries (courses) */
+
+@media only screen and (max-width: 800px) {
+  .courses {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0rem;
+  }
+
+  .courses-container {
+    display: none;
+  }
+
+  .course-mobile {
+    display: block;
+    justify-content: center;
+    width: 85%;
+    max-width: 500px;
+    margin-bottom: 2rem;
+  }
+
+    h4 {
+      background-color: #d8d8d8;
+      font-size: 1.5rem;
+      font-weight: bold;
+      padding: 1rem 0 1rem 1rem;
+      margin-bottom: 0.5rem;
+      padding-top: 1rem;
+      text-align: left;
+      letter-spacing: 1px;
+    }
+
+}
+
+/* Thesis */
+
+.thesis {
+  display: block;
+}
+
+.thesis h2 {
+  width: 100%;
+  text-align: center;
+}
+
+.thesis-container {
+  display: inline-flex;
+}
+
+.video-container {
+  width: 100%;
+  height: auto;
+  margin: 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+video {
+  margin-bottom: 1.5rem;
+}
+
+.thesis-sidebar {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+  width: 40%;
+}
+
+.thesis-sidebar div:first-child {
+  background-color: #d8d8d8;
+}
+
+.thesis-img {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+}
+
+.thesis-img img {
+  width: 35%;
+  padding: 1rem 1rem;
+}
+
+.thesis-box {
+  width: 65%;
+}
+
+.video-mobile {
+  display: none;
+}
+
+/* Media Queries (thesis) */
+
+@media only screen and (max-width: 800px) {
+  .video-mobile {
+    display: block;
+  }
+
+  .video-container, .thesis-sidebar {
+    display: none;
+  }
+
+  h2 {
+    padding-bottom: 2rem;
+  }
+}
+
+/* Footer */
+
+footer {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  border-top: 1px solid #2A3132; /* shadow */
+}
+
+footer span {
+  margin-left: 1.5rem;
+  font-size: 0.8rem;
+}
+
+footer nav ul li a {
+  font-size: 0.8rem;
+}
+
+/* Media Queries (footer) */
+
+@media only screen and (max-width: 800px) {
+  nav {
+    display: none;
+  }
+
+  footer {
+    border-top: 1px solid #2A3132; /* shadow */
+    height: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
