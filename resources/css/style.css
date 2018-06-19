@@ -11,7 +11,7 @@ body {
   line-height: 1.4;
 }
 
-section {
+section, footer {
   display: flex;
   align-items: center;
   align-content: flex-start;
@@ -377,13 +377,13 @@ header li, footer li {
   display: none;
 }
 
-#course {
+.course {
   text-align: left;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
-#cap {
+.uppercase {
   text-transform: uppercase;
   text-align: left;
   margin-top: 0.5rem;
@@ -458,7 +458,7 @@ video {
   width: 40%;
 }
 
-.thesis-sidebar div:first-child {
+.thesis-sidebar .grey {
   background-color: #d8d8d8;
 }
 
@@ -500,18 +500,11 @@ video {
 /* Footer */
 
 footer {
-  padding-top: 1rem;
-  display: flex;
+  padding: 1rem 1.5rem;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   height: 4rem;
-  border-top: 1px solid #2A3132; /* shadow */
-}
-
-footer span {
-  margin-left: 1.5rem;
-  font-size: 0.8rem;
+  border-top: 1px solid #eaeaea;
 }
 
 footer nav ul li a {
@@ -524,7 +517,7 @@ footer nav ul li a {
   }
 
   footer {
-    border-top: 1px solid #2A3132; /* shadow */
+    border-top: 1px solid #eaeaea;
     height: auto;
     margin-top: 1rem;
     margin-bottom: 1rem;
