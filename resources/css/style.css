@@ -80,7 +80,7 @@ p {
 
 /* Button Styles */
 
-button {
+.button {
   background-color: #4a4a4a;
   border: none;
   padding-top: 0.5rem;
@@ -95,36 +95,36 @@ button {
   cursor: pointer;
 }
 
-button a {
+.button p {
   font-size: 1rem;
+  margin: 0;
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
   text-decoration: none;
   color: white;
-  padding: 8px 0;
 }
 
-button a:after {
+.button p:after {
   content: '\00bb';
+  margin: 0;
   position: absolute;
   opacity: 0;
   top: 0;
   right: -20px;
   transition: 400ms;
-  padding: 8px 0;
 }
 
-button:hover {
+.button:hover {
   background-color: #9b9b9b;
 }
 
-button:hover a {
+.button:hover p {
   padding-right: 25px;
 }
 
-button:hover a:after {
+.button:hover p:after {
   opacity: 1;
   right: 0;
 }
@@ -151,7 +151,7 @@ header span {
   font-size: 1.5rem;
   }
 
-header li {
+header li, footer li {
   display: inline;
   padding: 0 0.5rem;
 }
@@ -183,10 +183,7 @@ header li {
 /* Banner Section */
 
 .banner {
-  /* display: flex; */
   background-color: #d8d8d8;
-  /* align-items: center; */
-  /* align-content: flex-start; */
 }
 
 .banner-img {
@@ -206,7 +203,6 @@ header li {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: left;
   width: 30%;
 }
 
@@ -236,6 +232,7 @@ header li {
 }
 
 /* Info Section */
+
 .info {
   background-color: #f3f5f5;
 }
@@ -337,7 +334,7 @@ header li {
   }
 }
 
-/* Courses */
+/* Courses Section */
 
 .courses {
     background-color: #d8d8d8;
@@ -393,8 +390,6 @@ header li {
   margin-bottom: 0.5rem;
 }
 
-/* Media Queries (courses) */
-
 @media only screen and (max-width: 800px) {
   .courses {
     background-color: #fff;
@@ -429,7 +424,7 @@ header li {
 
 }
 
-/* Thesis */
+/* Thesis Section */
 
 .thesis {
   display: block;
@@ -522,8 +517,6 @@ footer span {
 footer nav ul li a {
   font-size: 0.8rem;
 }
-
-/* Media Queries (footer) */
 
 @media only screen and (max-width: 800px) {
   nav {
